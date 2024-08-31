@@ -1,0 +1,33 @@
+:root {
+  /**
+  @font family declaration
+  */
+  --tp-ff-body: 'DM Sans', sans-serif;
+  --tp-ff-heading: 'Raleway', sans-serif;
+  --tp-ff-poppins: 'Poppins', sans-serif;
+  --tp-ff-p: 'DM Sans', sans-serif;
+  --tp-ff-fontawesome: "Font Awesome 6 Pro";
+  /**
+  @font size declaration
+  */
+  --tp-fz-body: 16px;
+  --tp-fz-p: 16px;
+  /**
+  @color declaration
+  */
+  --tp-common-white: #ffffff;
+  --tp-common-black: #000;
+  --tp-heading-primary: #020626;
+  --tp-heading-secondary: #000000;
+  --tp-grey-1: #F1F1F1;
+  --tp-grey-2: #F5F6F8;
+  --tp-text-body: #5A627D;
+  --tp-text-1: #261F1F;
+  --tp-text-2: #0C0808;
+  --tp-theme-primary: #020626;
+  --tp-theme-secondary: #05DAC3;
+  --tp-theme-third: azure;
+  --tp-bg-primary: #F3FBFE;
+  --tp-border-primary: #000;
+  --tp-border-secondary: #000;
+}/*# sourceMappingURL=index.css.map */

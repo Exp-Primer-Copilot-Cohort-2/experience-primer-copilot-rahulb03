@@ -1,0 +1,96 @@
+@use '../utils' as *;
+
+
+.main-content {
+  &.container {
+
+   
+    &.page-title {
+      margin-top: 5rem;
+     
+    }
+
+    &.row {
+      margin-top: 3rem;
+      
+      &.col-md-6 {
+        margin-bottom: 4rem;
+
+        &.framework-card {
+          display: flex;
+          flex-direction: column;
+
+          &.row {
+            flex: 1;
+            border:1px solid black;
+            background-color: var(--tp-theme-secondary);
+            &.col-md-6 {
+              padding: 1rem;
+
+              h2 {
+                font-size: 1.5rem;
+                margin-bottom: 0.5rem;
+              }
+
+              p {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+              }
+
+              &.framework-learn-more {
+                display: inline-block;
+                background-color: #007bff;
+                color: #fff;
+                padding: 0.5rem 1rem;
+                border-radius: 0.25rem;
+                text-decoration: none;
+              }
+            }
+
+            &.col-md-6 {
+              img {
+                
+                max-width: 100%;
+                height: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      .row {
+        .col-md-6 {
+          flex-direction: column;
+
+          .framework-card {
+            .row {
+              .col-md-6 {
+                padding: 0;
+
+                h2 {
+                  font-size: 1.2rem;
+                }
+
+                p {
+                  font-size: 0.9rem;
+                }
+
+                .framework-learn-more {
+                  font-size: 0.8rem;
+                }
+              }
+
+              .col-md-6 {
+                margin-top: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

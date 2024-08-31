@@ -1,0 +1,597 @@
+:root {
+  /**
+  @font family declaration
+  */
+  --tp-ff-body: 'DM Sans', sans-serif;
+  --tp-ff-heading: 'Raleway', sans-serif;
+  --tp-ff-poppins: 'Poppins', sans-serif;
+  --tp-ff-p: 'DM Sans', sans-serif;
+  --tp-ff-fontawesome: "Font Awesome 6 Pro";
+  /**
+  @font size declaration
+  */
+  --tp-fz-body: 16px;
+  --tp-fz-p: 16px;
+  /**
+  @color declaration
+  */
+  --tp-common-white: #ffffff;
+  --tp-common-black: #000;
+  --tp-heading-primary: #020626;
+  --tp-heading-secondary: #000000;
+  --tp-grey-1: #F1F1F1;
+  --tp-grey-2: #F5F6F8;
+  --tp-text-body: #5A627D;
+  --tp-text-1: #261F1F;
+  --tp-text-2: #0C0808;
+  --tp-theme-primary: #020626;
+  --tp-theme-secondary: #05DAC3;
+  --tp-theme-third: azure;
+  --tp-bg-primary: #F3FBFE;
+  --tp-border-primary: #000;
+  --tp-border-secondary: #000;
+}
+
+/*----------------------------------------*/
+/*  6.1 Footer Style 1
+/*----------------------------------------*/
+/* footer col design for home 1 */
+.tp-footer-bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.tp-footer-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background: #020C1B;
+  opacity: 0.98;
+}
+.tp-footer-top-area {
+  position: relative;
+  padding-top: 48px;
+  padding-bottom: 45px;
+}
+.tp-footer-top-shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 160px;
+  width: 100%;
+  border-bottom: 1px solid rgba(217, 217, 217, 0.08);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-footer-top-shape {
+    height: 200px;
+  }
+}
+@media (max-width: 575px) {
+  .tp-footer-top-shape {
+    height: 250px;
+  }
+}
+.tp-footer-top-contact a {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: var(--tp-common-white);
+  background: var(--tp-theme-secondary);
+  border-radius: 66.5px;
+  padding: 10px 24px;
+}
+@media (max-width: 575px) {
+  .tp-footer-top-contact a {
+    font-size: 17px;
+  }
+}
+.tp-footer-top-contact a span {
+  color: var(--tp-theme-secondary);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .tp-footer-top-right {
+    margin-top: 30px;
+  }
+}
+.tp-footer-top-right-headphone img {
+  margin-right: 20px;
+  transform: translateY(10px);
+}
+.tp-footer-top-right-content p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: var(--tp-common-white);
+  margin-bottom: -2px;
+}
+.tp-footer-top-right-content a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 34px;
+  color: var(--tp-theme-secondary);
+}
+.tp-footer-logo {
+  margin-bottom: 50px;
+}
+.tp-footer-info p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #B4B4B4;
+  margin-bottom: 35px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .tp-footer-info p {
+    margin-bottom: 20px;
+  }
+}
+.tp-footer-main-area {
+  position: relative;
+  padding-top: 65px;
+  padding-bottom: 52px;
+  border-bottom: 1px solid rgba(217, 217, 217, 0.08);
+}
+.tp-footer-main-location {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-footer-main-location {
+    padding-left: 25px;
+  }
+}
+.tp-footer-main-location a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 34px;
+  color: #B4B4B4;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-footer-main-location a br {
+    display: none;
+  }
+}
+.tp-footer-main-location a i {
+  color: var(--tp-theme-secondary);
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+}
+.tp-footer-main-location a:hover {
+  color: var(--tp-common-white);
+}
+.tp-footer-main-mail {
+  position: relative;
+  padding-left: 35px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-footer-main-mail {
+    padding-left: 30px;
+  }
+}
+.tp-footer-main-mail a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 34px;
+  color: #B4B4B4;
+}
+.tp-footer-main-mail a i {
+  color: var(--tp-theme-secondary);
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+}
+.tp-footer-main-mail a:hover {
+  color: var(--tp-common-white);
+}
+.tp-footer-widget-title {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 29px;
+  color: var(--tp-common-white);
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.tp-footer-widget ul li {
+  list-style: none;
+}
+.tp-footer-widget ul li:not(:last-of-type) {
+  margin-bottom: 22px;
+}
+.tp-footer-widget ul li a {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  color: #B4B4B4;
+  transition: 0.3s ease;
+}
+.tp-footer-widget ul li a::before {
+  position: absolute;
+  content: "\e09f";
+  font-family: "Font Awesome 6 Pro";
+  top: 10px;
+  left: -18px;
+  font-size: 18px;
+  transform: translateY(-50%);
+  color: var(--tp-theme-secondary);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+.tp-footer-widget ul li a:hover {
+  margin-left: 14px;
+  color: var(--tp-common-white);
+}
+.tp-footer-widget ul li a:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+.tp-footer-widget-social a {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--tp-common-white);
+  margin-right: 20px;
+}
+.tp-footer-widget-social a:hover {
+  color: var(--tp-theme-secondary);
+}
+.tp-footer-author {
+  margin-bottom: 32px;
+}
+.tp-footer-author-thumb {
+  position: relative;
+  z-index: 0;
+}
+.tp-footer-author-thumb::before {
+  position: absolute;
+  content: "";
+  background-color: var(--tp-theme-secondary);
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  right: 24px;
+  bottom: 4px;
+  z-index: 2;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-footer-author-thumb::before {
+    right: 14px;
+  }
+}
+.tp-footer-author-thumb img {
+  filter: drop-shadow(0px 17px 28px rgba(72, 88, 174, 0.2));
+  margin-right: 20px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-footer-author-thumb img {
+    margin-right: 10px;
+  }
+}
+.tp-footer-author-content span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--tp-common-white);
+}
+.tp-footer-from {
+  position: relative;
+  background: #081221;
+  padding: 30px 15px 40px 15px;
+}
+.tp-footer-text-email {
+  margin-bottom: 20px;
+}
+.tp-footer-text-email input {
+  position: relative;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(237, 237, 237, 0.3);
+  padding-left: 0px;
+  padding-right: 35px;
+}
+.tp-footer-text-email input::-moz-placeholder {
+  color: #B4B4B4;
+}
+.tp-footer-text-email input::placeholder {
+  color: #B4B4B4;
+}
+.tp-footer-text-email input:focus {
+  color: var(--tp-common-white);
+  border-bottom: 1px solid #fff;
+}
+.tp-footer-text-email span {
+  position: absolute;
+  top: 12px;
+  right: 2px;
+}
+.tp-footer-form-check {
+  margin-bottom: 30px;
+}
+.tp-footer-form-check label {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  color: #B4B4B4;
+}
+.tp-footer-form-check input {
+  border: 1px solid #4E545F;
+  background: transparent;
+  height: 23px;
+  width: 23px;
+  transform: translateY(-2px);
+  margin-right: 8px;
+  border-radius: 50% !important;
+}
+.tp-footer-form-check input:checked {
+  background-color: transparent;
+  box-shadow: none;
+}
+.tp-footer-copyright-area {
+  padding-top: 22px;
+  padding-bottom: 26px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .tp-footer-copyright-inner {
+    margin-bottom: 15px;
+  }
+}
+.tp-footer-copyright-inner p, .tp-footer-copyright-inner a {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 27px;
+  color: var(--tp-common-white);
+  margin-bottom: 0;
+}
+.tp-footer-copyright-inner p span, .tp-footer-copyright-inner a span {
+  color: var(--tp-theme-secondary);
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .tp-footer-col-1 {
+    margin-bottom: 40px;
+  }
+}
+.tp-footer-col-2 {
+  padding-left: 15px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .tp-footer-col-2 {
+    padding-left: 10px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-footer-col-2 {
+    padding-left: 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .tp-footer-col-2 {
+    padding-left: 0px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .tp-footer-col-2 {
+    margin-bottom: 40px;
+  }
+}
+.tp-footer-col-3 {
+  padding-left: 20px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .tp-footer-col-3 {
+    padding-left: 0;
+    margin-left: -30px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .tp-footer-col-3 {
+    padding-left: 0;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .tp-footer-col-3 {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .tp-footer-col-4 {
+    margin-left: -72px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .tp-footer-col-4 {
+    margin-left: 0;
+  }
+}
+
+/*----------------------------------------*/
+/*  6.2 Footer Style 2
+/*----------------------------------------*/
+/* footer col design for home 2 */
+.tp-footer-2-shape {
+  position: absolute;
+  top: 62px;
+  left: 0;
+}
+.tp-footer-2-main-area {
+  position: relative;
+  padding-top: 145px;
+  padding-bottom: 60px;
+}
+.tp-footer-2-main-area::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: rgba(217, 217, 217, 0.08);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .tp-footer-2-col-1 {
+    margin-bottom: 40px;
+  }
+}
+.tp-footer-2-col-1 .tp-footer-from span {
+  position: absolute;
+  top: 12px;
+  right: 2px;
+}
+.tp-footer-2-col-2 {
+  padding-left: 105px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-footer-2-col-2 {
+    padding-left: 7px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .tp-footer-2-col-2 {
+    margin-bottom: 40px;
+    padding-left: 75px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .tp-footer-2-col-2 {
+    padding-left: 0;
+    margin-bottom: 40px;
+  }
+}
+.tp-footer-2-col-3 .p {
+  margin-bottom: 34px;
+}
+.tp-footer-2-col-3 .tp-footer-main-location {
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .tp-footer-2-logo {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .tp-footer-2-menu {
+    padding-left: 48px;
+  }
+}
+.tp-footer-2-menu-area {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.tp-footer-2-menu ul li {
+  list-style: none;
+  display: inline-block;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .tp-footer-2-menu ul li {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.tp-footer-2-menu ul li:not(:last-child) {
+  margin-right: 65px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-footer-2-menu ul li:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .tp-footer-2-menu ul li:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+.tp-footer-2-menu ul li a:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+.tp-footer-2-menu ul li a:hover::after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+.tp-footer-2-menu ul li a {
+  position: relative;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: var(--tp-common-white);
+}
+.tp-footer-2-menu ul li a::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  bottom: 0px;
+  left: auto;
+  right: 0;
+  background-color: var(--tp-theme-secondary);
+  transition: all 0.3s ease-out 0s;
+}
+.tp-footer-2-menu ul li a::before {
+  position: absolute;
+  content: "\e09f";
+  font-family: "Font Awesome 6 Pro";
+  top: 10px;
+  left: -20px;
+  font-size: 18px;
+  transform: translateY(-50%);
+  color: var(--tp-common-white);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .tp-footer-2-call {
+    margin-top: 30px;
+  }
+}
+.tp-footer-2-call p {
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #828A8D;
+  margin-bottom: -8px;
+}
+.tp-footer-2-call span {
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--tp-common-white);
+}
+
+/*----------------------------------------*/
+/*  6.3 Footer Style 3
+/*----------------------------------------*/
+/* footer col design for home 3 */
+.tp-footer-3-main-area {
+  padding-top: 140px;
+  padding-bottom: 52px;
+  border-bottom: 1px solid rgba(217, 217, 217, 0.08);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .tp-footer-3-col-1 {
+    margin-bottom: 40px;
+  }
+}
+.tp-footer-3-col-2 {
+  padding-left: 55px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .tp-footer-3-col-2 {
+    padding-left: 0;
+    margin-bottom: 40px;
+  }
+}/*# sourceMappingURL=index.css.map */
